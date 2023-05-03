@@ -1,0 +1,222 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* min-width: 500px; */
+    line-height: 1.5;
+    
+}
+.top-container{
+    background-color: #1B1B1B;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+   border-bottom: 5px solid rgb(218, 165, 32);
+   position: fixed;
+    
+}
+
+.description-container{
+    display: flex;
+    margin: 0 50px;
+    
+
+}
+.github{
+    cursor: pointer;
+    color: goldenrod;
+    scale: 1.5;
+}
+.toggle{
+    height: 20px;
+    width: 40px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-left: 30px;
+}
+.toggle-icon{
+    color: goldenrod;
+}
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: 1s ease all;
+}
+/* --------------------------- */
+#navbar{
+    position: fixed;
+    top:70px;
+    min-width: 290px;
+    text-align: center;
+    width: 300px;
+    height: 100%;
+  
+    background-color: black;
+
+}
+#navbar ul{
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    height: 78%;
+   
+    
+}
+#navbar li{
+    
+    list-style: none;
+    
+  
+   width: 100%;
+   border-top:1px solid #1B1B1B;
+
+}
+#navbar a{
+    display: block;
+    padding: 10px 30px;
+    color: rgb(207, 198, 198);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+
+}
+#navbar a:hover{
+    color: rgb(236, 213, 80);
+    
+}
+header{
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: thin;
+    margin: 10px;
+    
+    
+}
+#main-doc header{
+    display: block;
+    width: 70%;
+    text-align: left;
+    margin: 0px;
+    border-bottom: 1px solid red;
+}
+
+.main-container{
+    position: fixed;
+    top:70px;
+    left: 300px;
+    height: 100%;
+    background-color: #1B1B1B;
+    
+    
+    
+}
+
+#main-doc{
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 50px;
+    padding-top: 10px;
+    
+    
+    height: 90%;
+    
+    
+}
+.main-section{
+   
+    margin-bottom: 30px;
+}
+section article{
+    color: white;
+    margin-right: 20px;
+    margin-top: 15px;
+    font-size: 0.95rem;
+    word-wrap: normal;
+    word-break: normal;
+    
+}
+section li{
+    margin: 10px 40px 10px 20px;
+}
+code{
+    font-family: 'Source Code Pro', monospace;
+    display: block;
+    text-align: left;
+    position: relative;
+    line-height: 2;
+    background-color: rgb(48, 46, 46);
+    padding: 15px;
+    margin: 10px;
+    word-break: normal;
+    word-wrap: normal;
+    border-radius: 5px;
+}
+.referance {
+    text-decoration: none;
+    color:rgb(218, 165, 32);
+    
+}
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    .top-container{
+        height: 45px;
+    }
+    #navbar{
+        position: fixed;
+        top:47px;
+        width: 100%;
+        text-align: center;
+        height: 90%;
+        background-color: black;
+    
+    }
+    #navbar ul {
+      border-bottom: 2px solid whitesmoke ;
+      height: 150px;
+    }
+    .main-container{
+        position: fixed;
+        top:270px;
+        left: 0px;
+        
+        height: 50%;
+        max-width: 815px;
+
+        width: 100%;
+        background-color: #1B1B1B;
+        
+        
+        
+    }
+   
+    #main-doc {
+        color: aliceblue;
+        background-color: #1B1B1B;
+      position:absolute;
+       
+      /* max-width: 815px; */
+      margin-left: 0;
+      padding: 30px;
+      /* margin-top: 10px; */
+    }
+  }
+  
